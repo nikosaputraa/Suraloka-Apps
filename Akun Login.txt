@@ -1,0 +1,7 @@
+User Admin :
+Email : admin@gmail.com
+Pw : 12345
+
+User Biasa :
+Email : niko@gmail.com
+Pw : 12345
