@@ -112,8 +112,8 @@
 
                         <div class="flex mb-3">
                             <a href="{{ route('shop') }}" class="text-emerald-800 hover:text-white border border-emerald-800 bg-white hover:bg-emerald-900 focus:ring-2 focus:outline-none focus:ring-emerald-300 rounded-full font-baloo-2-bold px-5 py-2.5 text-center me-3 mb-3 dark:border-emerald-800 dark:text-emerald-800 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Semua</a>
-                            @foreach($product as $category)
-                                <a href="{{ route('shop', ['category' => $category->category->id]) }}" class="text-emerald-800 hover:text-white border border-emerald-800 bg-white hover:bg-emerald-900 focus:ring-2 focus:outline-none focus:ring-emerald-300 rounded-full font-baloo-2-bold px-5 py-2.5 text-center me-3 mb-3 dark:border-emerald-800 dark:text-emerald-800 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">{{ $category->category->name }}</a>
+                            @foreach($categories as $category)
+                                <a href="{{ route('shop', ['category' => $category->id]) }}" class="text-emerald-800 hover:text-white border border-emerald-800 bg-white hover:bg-emerald-900 focus:ring-2 focus:outline-none focus:ring-emerald-300 rounded-full font-baloo-2-bold px-5 py-2.5 text-center me-3 mb-3 dark:border-emerald-800 dark:text-emerald-800 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">{{ $category->name }}</a>
                             @endforeach
                         </div>
                     
